@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProductCard.css'
+import {HiOutlineShoppingCart} from 'react-icons/hi';
 
 const ProductCard = ({gunData}) => {
     const {name,img,bullet,capacity,action,price}=gunData;
@@ -14,7 +15,7 @@ const ProductCard = ({gunData}) => {
             <p>Action : {action}</p>
             <div className='card_footer'>
                 <h2>${price}</h2>
-                <button>Add to cart</button>
+                <button>Add to cart   &nbsp; <HiOutlineShoppingCart/></button>
             </div>
         </div>
     );

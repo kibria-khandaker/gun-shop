@@ -16,12 +16,13 @@
   right: 20px;
 }
 .card_footer button {
-  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
   background-color: black;
   border: none;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   border-radius: 5px;
-  line-height: 21px;
 }
