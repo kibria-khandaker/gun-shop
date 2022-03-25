@@ -1,0 +1,27 @@
+.productCard_items {
+  position: relative;
+  border: 1px solid #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding-bottom: 100px;
+}
+.card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  right: 20px;
+}
+.card_footer button {
+  padding: 10px 30px;
+  background-color: black;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  line-height: 21px;
+}

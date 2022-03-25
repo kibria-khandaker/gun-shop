@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Products from './components/Products/Products';
+import ProductCard from './components/ProductCard/ProductCard';
 
 function App() {
   const [guns, setGuns] = useState([]);
-  console.log(guns);
+  // console.log(guns);
 
   useEffect(()=>{
     fetch('https://raw.githubusercontent.com/mir-hussain/guns/main/data.json')
@@ -15,9 +15,15 @@ function App() {
   
 
   return (
-    <div className="App">
-      <Navbar></Navbar>
-      <Products></Products>
+    <div>
+      <Navbar/>
+      <div className='productCard_container'>
+        {
+          guns.map((gun)=>(
+              <ProductCard  key={gun.id} gunData={gun}  />
+          ))
+        }
+      </div>
     </div>
   );
 }
